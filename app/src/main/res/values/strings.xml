@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Votify</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_party">Add Party</string>
+    <string name="candidate_image">Candidate image</string>
+    <string name="position">Position</string>
+    <string name="party">Party</string>
+    <string name="search_hint">Search by name, party or position</string>
+    <!-- Existing Strings -->
+    <string name="college_elections">College Elections</string>
+    <string name="announcements_records">Announcements &amp; Records</string>
+    <string name="stay_updated_news">Stay updated with the latest election news</string>
+    <string name="push_notifications_enabled">Push notifications enabled!</string>
+    <string name="notification_explanation">You\'ll receive instant updates about important election announcements. You can manage notification preferences in your account settings.</string>
+    <string name="current_announcements">Current Announcements</string>
+    <string name="election_archives">Election Archives</string>
+    <string name="pinned_announcements">Pinned Announcements</string>
+    <string name="voting_opens_tomorrow">Voting Opens Tomorrow</string>
+    <string name="urgent">URGENT</string>
+    <string name="at_9_am">9:00 AM</string>
+    <string name="by_election_commission">By Election Commission</string>
+    <string name="voting_details_urgent">All eligible students can cast their votes starting tomorrow morning. Voting will continue until 6:00 PM. Make sure to bring your student ID for verification.</string>
+    <string name="date_march_15">March 15, 2024</string>
+    <string name="_2_hours_ago">2 hours ago</string>
+    <string name="final_candidate_debate">Final Candidate Debate</string>
+    <string name="info">INFO</string>
+    <string name="tonight">Tonight</string>
+    <string name="by_student_activities">By Student Activities</string>
+    <string name="debate_details_info">Join us for the final candidate debate in the Main Auditorium at 7:00 PM. All candidates will be present.</string>
+    <string name="other_announcements">Latest Updates</string>
+    <string name="notification_icon">Notification Bell Icon</string>
+    <string name="pin_icon">Pin Icon</string>
+    <string name="time_icon">Time Icon</string>
+    <string name="calendar_icon">Calendar Icon</string>
+    <string name="history_icon">History Icon</string>
+    <string name="info_icon">Info Circle Icon</string>
+    <string name="home">Home</string>
+    <string name="candidates">Candidates</string>
+    <string name="vote">Vote</string>
+    <string name="news">News</string>
+    <string name="results">Results</string>
+    <string name="admin">Admin</string>
+</resources>
