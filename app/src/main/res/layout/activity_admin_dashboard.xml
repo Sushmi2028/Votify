@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5"
+    tools:context=".AdminDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:paddingHorizontal="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Dashboard"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_800"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/logoutBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logout_icon"
+                app:tint="@color/blue_800"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content Management"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textColor="@android:color/black"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:columnCount="2"
+                app:rowCount="3">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddCandidate"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Add Candidate"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_menu_add"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddParty"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Add Party"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_menu_myplaces"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddAnnouncement"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Add Announcement"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_dialog_info"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnManageResults"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="View Results"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_menu_sort_by_size"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnManageCandidate"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Manage Candidate"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_menu_sort_by_size"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGenerateTokens"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Generate Anonymous Tokens"
+                    android:textColor="@android:color/black"
+                    app:icon="@android:drawable/ic_lock_lock"
+                    app:iconTint="@color/blue_500"
+                    app:iconGravity="textTop"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="16dp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="8dp" />
+            </androidx.gridlayout.widget.GridLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System Actions"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@android:color/black"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publish / Unpublish Results"
+                android:padding="12dp"
+                app:icon="@android:drawable/ic_menu_send"
+                android:layout_marginBottom="8dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

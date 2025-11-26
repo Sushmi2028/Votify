@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    tools:context=".AddAnnouncementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Announcement"
+            android:textColor="#1E5BA8"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title (required)"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1E5BA8"
+            android:padding="10dp" />
+
+        <!-- Subtitle -->
+        <EditText
+            android:id="@+id/etSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subtitle (optional)"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1E5BA8"
+            android:padding="10dp" />
+
+        <!-- Content -->
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:hint="Announcement details / content (required)"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1E5BA8"
+            android:padding="10dp" />
+
+        <!-- Date text -->
+        <EditText
+            android:id="@+id/etDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date text (e.g. March 15, 2025)"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#1E5BA8"
+            android:padding="10dp" />
+
+        <!-- Announcement type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:layout_marginStart="20dp" />
+
+            <RadioButton
+                android:id="@+id/rbUrgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent"
+                android:layout_marginStart="20dp" />
+        </RadioGroup>
+
+        <!-- Pinned Checkbox -->
+        <CheckBox
+            android:id="@+id/cbPinned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin this announcement"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btnAddAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Announcement"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1E5BA8"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Note -->
+        <TextView
+            android:id="@+id/tvAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Announcement will be saved to Firestore. Pinned items appear first for students."
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="2dp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

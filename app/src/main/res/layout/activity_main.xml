@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+
+    android:background="@android:color/white">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOTIFY - College Election System"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+    <!-- Student Login -->
+    <Button
+        android:id="@+id/btnStudentLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Login"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Student Registration -->
+    <Button
+        android:id="@+id/btnStudentRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Registration"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Admin Login -->
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Anonymous Login -->
+    <Button
+        android:id="@+id/btnAnonymousLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anonymous Login"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

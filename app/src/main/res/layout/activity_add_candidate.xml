@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Candidate"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etCandidateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCandidateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Party Spinner (loaded from Firestore) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spCandidateParty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Position Spinner (fixed list) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spCandidatePosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCandidateYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year (e.g. 3rd Year)"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCandidateDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCandidateAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agenda"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveCandidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Candidate"/>
+    </LinearLayout>
+</ScrollView>

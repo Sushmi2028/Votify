@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Anonymous Tokens"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etTokenCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of tokens to generate"
+            android:inputType="number"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnGenerateTokens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Tokens"/>
+
+        <TextView
+            android:id="@+id/tvGeneratedTokens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Generated tokens will appear here"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
