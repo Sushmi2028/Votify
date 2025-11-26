@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "11544469251",
+    "project_id": "votifyelectionsystem-beef9",
+    "storage_bucket": "votifyelectionsystem-beef9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11544469251:android:0647519652b1a756411336",
+        "android_client_info": {
+          "package_name": "com.example.collegeelectionsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-hUn_Dj_0OhUwfpT2oLIAbazLShEQ-7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
