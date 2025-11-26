@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Blue background -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,0a54,54 0,1 1,-0.1,0z" />
+
+    <!-- White ballot box -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,38h36v32a4,4 0,0 1,-4,4H40a4,4 0,0 1,-4,-4z" />
+
+    <!-- Checkmark -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M46,54l6,6l10,-10l3,3l-13,13l-9,-9z" />
+
+    <!-- Light blue spark -->
+    <path
+        android:fillColor="#03A9F4"
+        android:pathData="M54,20l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1z" />
+</vector>
